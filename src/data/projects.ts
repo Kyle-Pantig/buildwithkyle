@@ -43,6 +43,20 @@ export const projects: Project[] = [
         technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB"],
         date: "2024",
     },
+    {
+        name: "The Beauty of Lovebirds",
+        description: "An academic project showcasing lovebird species, their care, breeding, and characteristics. Features an interactive gallery and species information.",
+        link: "https://thebeautyoflovebirds.netlify.app/",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        date: "2023",
+    },
+    {
+        name: "Bracketing Method Calculator",
+        description: "A numerical methods calculator for solving equations using Bisection Method and False Position Method with step-by-step solutions and iteration tables.",
+        link: "https://bracketingmethodcalculator.netlify.app/",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        date: "2023",
+    },
     
 ];
 
