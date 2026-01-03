@@ -14,7 +14,7 @@ export default function Footer() {
       transition={{ duration: 0.5, delay: 0.6 }}
     >
       <div className="flex items-center justify-center">
-        <Badge variant="outline" className="liquid-glass text-sm text-foreground font-normal px-4 py-2 rounded-full">
+        <Badge variant="outline" className="glass-card text-sm text-foreground font-normal px-4 py-2">
           © {currentYear} Kyle Pantig. All rights reserved.
         </Badge>
       </div>

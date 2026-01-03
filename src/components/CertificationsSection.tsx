@@ -9,7 +9,7 @@ import { certifications } from "@/data/certifications";
 
 export default function CertificationsSection() {
   return (
-    <Card className="relative overflow-hidden h-full gap-0 liquid-glass rounded-2xl">
+    <Card className="relative overflow-hidden h-full gap-0">
         <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             <Award className="h-5 w-5" />
@@ -17,11 +17,9 @@ export default function CertificationsSection() {
           </CardTitle>
           <CardAction>
             <Link href="/certifications">
-              <Button variant="ghost" size="sm" className="text-xs rounded-full h-7 px-2 liquid-glass">
-                <span className="relative z-10 flex items-center">
-                  View All
-                  <ArrowRight className="ml-1 h-2.5 w-2.5" />
-                </span>
+              <Button variant="ghost" size="sm" className="text-xs rounded-full h-7 px-2">
+                View All
+                <ArrowRight className="ml-1 h-2.5 w-2.5" />
               </Button>
             </Link>
           </CardAction>

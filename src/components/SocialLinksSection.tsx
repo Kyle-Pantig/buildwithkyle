@@ -36,7 +36,7 @@ const socialLinks: SocialLink[] = [
 
 export default function SocialLinksSection() {
   return (
-    <Card className="relative overflow-hidden h-full gap-0 liquid-glass rounded-2xl">
+    <Card className="relative overflow-hidden h-full gap-0">
         <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             Social Links
@@ -52,11 +52,9 @@ export default function SocialLinksSection() {
                   rel="noopener noreferrer"
                   aria-label={`Visit ${link.name} profile (opens in new tab)`}
                 >
-                  <Button variant="ghost" className="rounded-full gap-2 liquid-glass">
-                    <span className="relative z-10 flex items-center gap-2">
-                      <span aria-hidden="true">{link.icon}</span>
-                      {link.name}
-                    </span>
+                  <Button variant="outline" className="rounded-full gap-2">
+                    <span aria-hidden="true">{link.icon}</span>
+                    {link.name}
                   </Button>
                 </Link>
               </div>

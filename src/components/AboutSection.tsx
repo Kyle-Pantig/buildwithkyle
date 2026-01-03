@@ -5,14 +5,14 @@ import { User } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <Card className="relative gap-0 overflow-hidden liquid-glass rounded-2xl">
-        <CardHeader className="relative z-10">
+    <Card className="relative h-auto md:h-full gap-0 overflow-visible">
+        <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             <User className="h-5 w-5" />
             About
           </CardTitle>
         </CardHeader>
-        <CardContent className="relative z-10 space-y-4 text-sm text-muted-foreground leading-relaxed pb-6">
+        <CardContent className="space-y-4 text-sm text-muted-foreground leading-relaxed">
           <p>
             I'm a web developer focused on building modern, practical web applications that solve real-world problems. I use JavaScript to create fast, scalable, and user-friendly experiences across the web.
           </p>

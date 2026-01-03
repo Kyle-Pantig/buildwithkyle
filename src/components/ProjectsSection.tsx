@@ -9,7 +9,7 @@ import { projects } from "@/data/projects";
 
 export default function ProjectsSection() {
   return (
-    <Card className="relative overflow-hidden h-full liquid-glass rounded-2xl">
+    <Card className="relative overflow-hidden h-full">
         <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             <FolderKanban className="h-5 w-5" />
@@ -17,11 +17,9 @@ export default function ProjectsSection() {
           </CardTitle>
           <CardAction>
             <Link href="/projects">
-              <Button variant="ghost" size="sm" className="text-xs rounded-full h-7 px-2 liquid-glass">
-                <span className="relative z-10 flex items-center">
-                  View All
-                  <ArrowRight className="ml-1 h-2.5 w-2.5" />
-                </span>
+              <Button variant="ghost" size="sm" className="text-xs rounded-full h-7 px-2">
+                View All
+                <ArrowRight className="ml-1 h-2.5 w-2.5" />
               </Button>
             </Link>
           </CardAction>
@@ -36,7 +34,7 @@ export default function ProjectsSection() {
               className="block"
               aria-label={`View ${project.name} project (opens in new tab)`}
             >
-              <Card className="p-4 transition-all cursor-pointer group flex flex-col liquid-glass rounded-xl">
+              <Card className="p-4 transition-all cursor-pointer group flex flex-col">
                 <div className="flex items-start justify-between gap-2 ">
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-sm text-foreground group-hover:text-blue-500 transition-colors">

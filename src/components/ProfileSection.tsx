@@ -45,7 +45,7 @@ export default function ProfileSection() {
   return (
     <div>
         <div>
-          <Card className="relative overflow-hidden liquid-glass rounded-2xl">
+          <Card className="relative overflow-hidden">
             {/* Large Keyboard Icon Background */}
             <div className="absolute right-0 top-0 opacity-10 dark:opacity-15 pointer-events-none translate-x-1/4 -translate-y-1/4">
               <Keyboard className="h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] text-blue-500 rotate-45 blur-sm" />
@@ -119,23 +119,19 @@ export default function ProfileSection() {
                       aria-label="Contact me via email"
                     >
                       <Button 
-                        variant="ghost" 
-                        className="w-full rounded-full sm:w-auto liquid-glass" 
+                        variant="outline" 
+                        className="w-full rounded-full sm:w-auto" 
                         size="default"
                       >
-                        <span className="relative z-10 flex items-center">
-                          <Mail className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
-                          Contact Me
-                        </span>
+                        <Mail className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                        Contact Me
                       </Button>
                     </Link>
                     <Link href="/projects" aria-label="View all projects">
-                      <Button variant="ghost" className="w-full rounded-full sm:w-auto liquid-glass" size="default">
-                        <span className="relative z-10 flex items-center">
-                          <Users className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
-                          View Projects
-                          <ArrowRight className="ml-2 h-3.5 w-3.5" aria-hidden="true" />
-                        </span>
+                      <Button variant="outline" className="w-full rounded-full sm:w-auto" size="default">
+                        <Users className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                        View Projects
+                        <ArrowRight className="ml-2 h-3.5 w-3.5" aria-hidden="true" />
                       </Button>
                     </Link>
                     <Link 
@@ -145,11 +141,9 @@ export default function ProfileSection() {
                       download
                       aria-label="Download resume PDF"
                     >
-                      <Button variant="ghost" className="w-full rounded-full sm:w-auto liquid-glass" size="default">
-                        <span className="relative z-10 flex items-center">
-                          <Download className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
-                          Download Resume
-                        </span>
+                      <Button variant="outline" className="w-full rounded-full sm:w-auto" size="default">
+                        <Download className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                        Download Resume
                       </Button>
                     </Link>
                     <Link 
@@ -158,11 +152,9 @@ export default function ProfileSection() {
                       rel="noopener noreferrer"
                       aria-label="Visit LinkedIn profile (opens in new tab)"
                     >
-                      <Button variant="ghost" className="w-full rounded-full sm:w-auto liquid-glass" size="default">
-                        <span className="relative z-10 flex items-center">
-                          <Linkedin className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
-                          LinkedIn
-                        </span>
+                      <Button variant="outline" className="w-full rounded-full sm:w-auto" size="default">
+                        <Linkedin className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                        LinkedIn
                       </Button>
                     </Link>
                   </div>

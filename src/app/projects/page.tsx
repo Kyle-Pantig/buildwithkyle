@@ -44,11 +44,9 @@ export default function ProjectsPage() {
         <motion.div variants={itemVariants} className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/">
-              <Button variant="ghost" size="sm" className="rounded-full liquid-glass">
-                <span className="relative z-10 flex items-center">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back
-                </span>
+              <Button variant="ghost" size="sm" className="rounded-full">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back
               </Button>
             </Link>
             <div className="flex items-center gap-2">
@@ -70,7 +68,7 @@ export default function ProjectsPage() {
               variants={itemVariants}
               className="block"
             >
-              <Card className="p-5 transition-all cursor-pointer group h-full min-h-[140px] flex flex-col liquid-glass rounded-xl">
+              <Card className="p-5 transition-all cursor-pointer group h-full min-h-[140px] flex flex-col">
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-sm text-foreground group-hover:text-blue-500 transition-colors">
