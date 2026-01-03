@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { GridBackground } from "@/components/ui/grid-background";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
     description: "Web Developer from Pampanga, Philippines specializing in building modern, scalable web applications.",
     creator: "@kylepantig",
   },
-  metadataBase: new URL("https://buildwithkyle.vercel.app"),
+  metadataBase: new URL("https://www.kylepantig.site"),
 };
 
 export default function RootLayout({
@@ -101,6 +102,7 @@ export default function RootLayout({
           <Footer />
           <BackToTop />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
