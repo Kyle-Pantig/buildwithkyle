@@ -9,10 +9,10 @@ export interface Project {
 export const projects: Project[] = [
     
     {
-        name: "Asset Dog",
+        name: "GoCodes",
         description: "Comprehensive asset management solution for tracking company assets like computers and equipment.",
-        link: "https://shoreagents-asset-dog.vercel.app",
-        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Supabase"],
+        link: "https://gocodes.vercel.app/",
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Python", "FastAPI", "Supabase"],
         date: "2025",
     },
     {

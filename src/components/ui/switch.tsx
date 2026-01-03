@@ -30,7 +30,7 @@ function Switch({
         asChild
       >
         <motion.div
-          className={cn(
+        className={cn(
             "glass-switch-thumb pointer-events-none flex items-center justify-center size-5 rounded-full"
           )}
           animate={{

@@ -21,7 +21,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl space-y-4">
           <ProfileSection />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:items-stretch">
             <div className="md:col-span-2 space-y-4 flex flex-col">
               <AboutSection />
               <ExperienceSection />
@@ -35,11 +35,11 @@ export default function Home() {
             <div className="md:col-span-2 flex flex-col">
               <TechStackSection />
             </div>
-          </div>
+        </div>
           
           <SocialLinksSection />
         </div>
       </motion.div>
-    </main>
+      </main>
   );
 }

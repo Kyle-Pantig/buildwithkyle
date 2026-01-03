@@ -10,7 +10,7 @@ export const techStack: TechStackCategory[] = [
   },
   {
     label: "Backend",
-    technologies: ["Node.js", "Express", "Python", "Java", "PHP", "C++", "NextAuth", "PostgreSQL", "MongoDB", "MySQL"],
+    technologies: ["Node.js", "Express", "Python", "FastAPI", "Java", "PHP", "C++", "NextAuth", "PostgreSQL", "MongoDB", "MySQL"],
   },
   {
     label: "Tools",
@@ -18,7 +18,7 @@ export const techStack: TechStackCategory[] = [
   },
   {
     label: "Cloud",
-    technologies: ["AWS S3", "Cloudinary"],
+    technologies: ["AWS S3", "Cloudinary", "Supabase Storage"],
   },
   {
     label: "CMS/No-Code",

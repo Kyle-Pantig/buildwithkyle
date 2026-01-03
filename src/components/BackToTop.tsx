@@ -43,12 +43,14 @@ export default function BackToTop() {
         >
           <Button
             onClick={scrollToTop}
-            variant="outline"
+            variant="ghost"
             size="icon"
-            className="rounded-full h-12 w-12 glass-button"
+            className="rounded-full h-12 w-12 liquid-glass"
             aria-label="Back to top"
           >
-            <ArrowUp className="h-5 w-5" />
+            <span className="relative z-10">
+              <ArrowUp className="h-5 w-5" />
+            </span>
           </Button>
         </motion.div>
       )}

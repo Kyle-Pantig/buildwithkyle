@@ -34,3 +34,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Contact Form/Page
+The "Contact Me" button doesn't link anywhere
+Create a /contact page with a working form (or link to email)
+Footer
+Copyright, year, attribution
+Quick links to social profiles
+"Made with" or tech stack mention
+Navigation/Header
+Sticky header with smooth scroll to sections
+Mobile menu for smaller screens
+Active section highlighting
+Resume/CV Download
+Add a "Download Resume" button in the profile section
+Link to a PDF file
+404 Page
+Custom 404 page matching your design
+Functionality fixes
+"View Projects" button should link to /projects
+"Contact Me" should link to /contact or open email

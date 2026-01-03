@@ -9,7 +9,7 @@ import { techStack } from "@/data/techStack";
 
 export default function TechStackSection() {
   return (
-    <Card className="relative overflow-hidden h-full gap-0">
+    <Card className="relative overflow-hidden h-full gap-0 liquid-glass rounded-2xl">
         <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             <Code className="h-5 w-5" />
@@ -17,9 +17,11 @@ export default function TechStackSection() {
           </CardTitle>
           <CardAction>
             <Link href="/tech-stack">
-              <Button variant="ghost" size="sm" className="text-xs rounded-full h-7 px-2">
-                View All
-                <ArrowRight className="ml-1 h-2.5 w-2.5" />
+              <Button variant="ghost" size="sm" className="text-xs rounded-full h-7 px-2 liquid-glass">
+                <span className="relative z-10 flex items-center">
+                  View All
+                  <ArrowRight className="ml-1 h-2.5 w-2.5" />
+                </span>
               </Button>
             </Link>
           </CardAction>

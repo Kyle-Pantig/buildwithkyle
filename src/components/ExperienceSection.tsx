@@ -7,7 +7,7 @@ import { experiences } from "@/data/experiences";
 
 export default function ExperienceSection() {
   return (
-    <Card className="relative overflow-hidden h-full gap-0">
+    <Card className="relative overflow-hidden h-full gap-0 liquid-glass rounded-2xl">
         <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             <Briefcase className="h-5 w-5" />

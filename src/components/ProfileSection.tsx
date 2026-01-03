@@ -45,7 +45,7 @@ export default function ProfileSection() {
   return (
     <div>
         <div>
-          <Card className="relative overflow-hidden">
+          <Card className="relative overflow-hidden liquid-glass rounded-2xl">
             {/* Large Keyboard Icon Background */}
             <div className="absolute right-0 top-0 opacity-10 dark:opacity-15 pointer-events-none translate-x-1/4 -translate-y-1/4">
               <Keyboard className="h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] text-blue-500 rotate-45 blur-sm" />
@@ -114,43 +114,55 @@ export default function ProfileSection() {
 
                   {/* Action Buttons */}
                   <div className="mt-3 flex flex-col gap-2 sm:flex-row">
-                    <Button 
-                      variant="outline" 
-                      className="w-full rounded-full sm:w-auto" 
-                      size="default"
+                    <Link 
+                      href="mailto:kylepantig@gmail.com"
                       aria-label="Contact me via email"
                     >
-                      <Mail className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
-                      Contact Me
-                    </Button>
+                      <Button 
+                        variant="ghost" 
+                        className="w-full rounded-full sm:w-auto liquid-glass" 
+                        size="default"
+                      >
+                        <span className="relative z-10 flex items-center">
+                          <Mail className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                          Contact Me
+                        </span>
+                      </Button>
+                    </Link>
                     <Link href="/projects" aria-label="View all projects">
-                      <Button variant="outline" className="w-full rounded-full sm:w-auto" size="default">
-                        <Users className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
-                        View Projects
-                        <ArrowRight className="ml-2 h-3.5 w-3.5" aria-hidden="true" />
+                      <Button variant="ghost" className="w-full rounded-full sm:w-auto liquid-glass" size="default">
+                        <span className="relative z-10 flex items-center">
+                          <Users className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                          View Projects
+                          <ArrowRight className="ml-2 h-3.5 w-3.5" aria-hidden="true" />
+                        </span>
                       </Button>
                     </Link>
                     <Link 
-                      href="/resume.pdf" 
+                      href="/Kyle Francis Pantig - Resume.pdf" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       download
                       aria-label="Download resume PDF"
                     >
-                      <Button variant="outline" className="w-full rounded-full sm:w-auto" size="default">
-                        <Download className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
-                        Download Resume
+                      <Button variant="ghost" className="w-full rounded-full sm:w-auto liquid-glass" size="default">
+                        <span className="relative z-10 flex items-center">
+                          <Download className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                          Download Resume
+                        </span>
                       </Button>
                     </Link>
                     <Link 
-                      href="https://www.linkedin.com/in/your-profile" 
+                      href="https://www.linkedin.com/in/kyle-francis-pantig-207341201" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       aria-label="Visit LinkedIn profile (opens in new tab)"
                     >
-                      <Button variant="outline" className="w-full rounded-full sm:w-auto" size="default">
-                        <Linkedin className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
-                        LinkedIn
+                      <Button variant="ghost" className="w-full rounded-full sm:w-auto liquid-glass" size="default">
+                        <span className="relative z-10 flex items-center">
+                          <Linkedin className="mr-2 h-3.5 w-3.5" aria-hidden="true" />
+                          LinkedIn
+                        </span>
                       </Button>
                     </Link>
                   </div>

@@ -13,8 +13,64 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Kyle Pantig - Web Developer",
-  description: "Web Developer portfolio of Kyle Pantig",
+  title: {
+    default: "Kyle Pantig - Web Developer",
+    template: "%s | Kyle Pantig",
+  },
+  description: "Web Developer from Pampanga, Philippines specializing in building modern, scalable web applications using React, Next.js, TypeScript, and Python. View my projects, experience, and tech stack.",
+  keywords: [
+    "Kyle Pantig",
+    "Web Developer",
+    "Frontend Developer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "FastAPI",
+    "Portfolio",
+    "Build with Kyle",
+    "Build with Kyle Portfolio",
+    "Build with Kyle Projects",
+    "Build with Kyle Experience",
+    "Build with Kyle Tech Stack",
+    "Build with Kyle Certifications",
+    "buildwithkyle",
+    "buildwithkyle portfolio",
+    "buildwithkyle projects",
+    "buildwithkyle experience",
+    "buildwithkyle tech stack",
+    "buildwithkyle certifications",
+  ],
+  authors: [{ name: "Kyle Pantig", url: "https://github.com/Kyle-Pantig" }],
+  creator: "Kyle Pantig",
+  publisher: "Kyle Pantig",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Kyle Pantig - Web Developer",
+    title: "Kyle Pantig - Web Developer",
+    description: "Web Developer from Pampanga, Philippines specializing in building modern, scalable web applications using React, Next.js, TypeScript, and Python.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kyle Pantig - Web Developer",
+    description: "Web Developer from Pampanga, Philippines specializing in building modern, scalable web applications.",
+    creator: "@kylepantig",
+  },
+  metadataBase: new URL("https://buildwithkyle.vercel.app"),
 };
 
 export default function RootLayout({
@@ -41,7 +97,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <GridBackground />
-          {children}
+        {children}
           <Footer />
           <BackToTop />
         </ThemeProvider>

@@ -44,9 +44,11 @@ export default function TechStackPage() {
         <motion.div variants={itemVariants} className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/">
-              <Button variant="ghost" size="sm" className="rounded-full">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back
+              <Button variant="ghost" size="sm" className="rounded-full liquid-glass">
+                <span className="relative z-10 flex items-center">
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Back
+                </span>
               </Button>
             </Link>
             <div className="flex items-center gap-2">
@@ -64,7 +66,7 @@ export default function TechStackPage() {
               key={categoryIndex}
               variants={itemVariants}
             >
-              <Card className="relative overflow-hidden h-full">
+              <Card className="relative overflow-hidden h-full liquid-glass rounded-xl">
                 <CardHeader>
                   <CardTitle className="text-lg font-semibold">
                     {category.label}

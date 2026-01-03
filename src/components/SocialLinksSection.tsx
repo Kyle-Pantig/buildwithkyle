@@ -14,29 +14,29 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     name: "Facebook",
-    url: "https://www.facebook.com/your-profile",
+    url: "https://www.facebook.com/kylepantiggg",
     icon: <Facebook className="h-4 w-4" />,
   },
   {
     name: "Github",
-    url: "https://github.com/your-profile",
+    url: "https://github.com/Kyle-Pantig",
     icon: <Github className="h-4 w-4" />,
   },
   {
     name: "Email",
-    url: "mailto:your-email@example.com",
+    url: "mailto:kylepantig@gmail.com",
     icon: <Mail className="h-4 w-4" />,
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/your-profile",
+    url: "https://www.linkedin.com/in/kyle-francis-pantig-207341201",
     icon: <Linkedin className="h-4 w-4" />,
   },
 ];
 
 export default function SocialLinksSection() {
   return (
-    <Card className="relative overflow-hidden h-full gap-0">
+    <Card className="relative overflow-hidden h-full gap-0 liquid-glass rounded-2xl">
         <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             Social Links
@@ -52,9 +52,11 @@ export default function SocialLinksSection() {
                   rel="noopener noreferrer"
                   aria-label={`Visit ${link.name} profile (opens in new tab)`}
                 >
-                  <Button variant="outline" className="rounded-full gap-2">
-                    <span aria-hidden="true">{link.icon}</span>
-                    {link.name}
+                  <Button variant="ghost" className="rounded-full gap-2 liquid-glass">
+                    <span className="relative z-10 flex items-center gap-2">
+                      <span aria-hidden="true">{link.icon}</span>
+                      {link.name}
+                    </span>
                   </Button>
                 </Link>
               </div>
