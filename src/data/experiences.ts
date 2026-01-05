@@ -16,11 +16,11 @@ export const experiences: Experience[] = [
     title: "Bachelor of Science in Computer Engineering",
     company: "Don Honorio Ventura State University",
     period: "2025",
-    description: "Graduated as Computer Engineer.",
+    description: "",
   },
   {
     title: "Hello World!",
-    company: "Self-study through online programming platforms",
+    company: "",
     period: "2021",
     description: "Started my programming journey by writing my first 'Hello World' program.",
   },
