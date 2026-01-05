@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kyle Pantig - Web Developer",
+  title: "Kyle Pantig - Web Developer",
     description: "Web Developer from Pampanga, Philippines specializing in building modern, scalable web applications.",
     creator: "@kylepantig",
   },

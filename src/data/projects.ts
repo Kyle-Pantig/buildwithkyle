@@ -9,6 +9,13 @@ export interface Project {
 export const projects: Project[] = [
     
     {
+        name: "Catalink",
+        description: "Create and share your product catalogs with secure share codes. Professional catalog management made simple.",
+        link: "https://catalink.vercel.app/",
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "FastAPI", "Prisma"],
+        date: "2025",
+    },
+    {
         name: "GoCodes",
         description: "Comprehensive asset management solution for tracking company assets like computers and equipment.",
         link: "https://gocodes.vercel.app/",
