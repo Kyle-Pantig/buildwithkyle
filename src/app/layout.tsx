@@ -74,6 +74,67 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.kylepantig.site"),
 };
 
+// JSON-LD Structured Data for SEO Sitelinks
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kylepantig.site/#website",
+      "url": "https://www.kylepantig.site",
+      "name": "Kyle Pantig - Web Developer",
+      "description": "Web Developer from Pampanga, Philippines specializing in building modern, scalable web applications using React, Next.js, TypeScript, and Python.",
+      "publisher": {
+        "@id": "https://www.kylepantig.site/#person"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.kylepantig.site/#person",
+      "name": "Kyle Pantig",
+      "url": "https://www.kylepantig.site",
+      "jobTitle": "Web Developer",
+      "sameAs": [
+        "https://github.com/Kyle-Pantig",
+        "https://www.linkedin.com/in/kyle-pantig"
+      ],
+      "knowsAbout": ["React", "Next.js", "TypeScript", "JavaScript", "Python", "FastAPI", "Node.js", "PostgreSQL", "Tailwind CSS"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.kylepantig.site/#webpage",
+      "url": "https://www.kylepantig.site",
+      "name": "Kyle Pantig - Web Developer",
+      "isPartOf": {
+        "@id": "https://www.kylepantig.site/#website"
+      },
+      "about": {
+        "@id": "https://www.kylepantig.site/#person"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Projects",
+      "url": "https://www.kylepantig.site/projects",
+      "description": "Explore my web development projects including GoCodes, DigiVault, PurseFlow, and more."
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Tech Stack",
+      "url": "https://www.kylepantig.site/tech-stack",
+      "description": "Technologies I use: React, Next.js, TypeScript, Python, FastAPI, Node.js, and more."
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Certifications",
+      "url": "https://www.kylepantig.site/certifications",
+      "description": "View my professional certifications and credentials in web development."
+    }
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -84,6 +145,10 @@ export default function RootLayout({
       <head>
         <meta name="apple-mobile-web-app-title" content="Kyle" />
         <link rel="canonical" href="https://www.kylepantig.site" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body
         className={`${poppins.variable} antialiased`}
