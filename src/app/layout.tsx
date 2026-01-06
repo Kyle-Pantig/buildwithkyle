@@ -81,6 +81,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Kyle" />
+        <link rel="canonical" href="https://www.kylepantig.site" />
+      </head>
       <body
         className={`${poppins.variable} antialiased`}
         style={{ fontFamily: 'var(--font-poppins), sans-serif' }}
