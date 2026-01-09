@@ -11,7 +11,7 @@ export const projects: Project[] = [
         name: "SalaPeso",
         description: "Simple and intuitive savings tracker to help you reach your financial goals. Track multiple savings goals, monitor progress, and achieve your dreams.",
         link: "https://salapeso.vercel.app",
-        technologies: ["Next.js", "Tailwind CSS", "Supabase", "Prisma", "ElysiaJS", "NextAuth"],
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Prisma", "ElysiaJS", "NextAuth"],
         date: "2025",
     },
     {
