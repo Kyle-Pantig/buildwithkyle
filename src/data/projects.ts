@@ -7,7 +7,13 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-    
+    {
+        name: "SalaPeso",
+        description: "Simple and intuitive savings tracker to help you reach your financial goals. Track multiple savings goals, monitor progress, and achieve your dreams.",
+        link: "https://salapeso.vercel.app",
+        technologies: ["Next.js", "Tailwind CSS", "Supabase", "Prisma", "ElysiaJS", "NextAuth"],
+        date: "2025",
+    },
     {
         name: "Catalink",
         description: "Create and share your product catalogs with secure share codes. Professional catalog management made simple.",
