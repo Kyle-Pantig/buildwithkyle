@@ -145,6 +145,12 @@ export default function RootLayout({
       <head>
         <meta name="apple-mobile-web-app-title" content="Kyle" />
         <link rel="canonical" href="https://www.kylepantig.site" />
+        {/* Explicit favicon/icon links for SEO tools and checkers */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/icon0.svg" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/icon1.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
