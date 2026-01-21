@@ -1,25 +1,32 @@
 export interface Project {
-  name: string;
-  description: string;
-  link: string;
-  technologies?: string[];
-  date?: string;
+    name: string;
+    description: string;
+    link: string;
+    technologies?: string[];
+    date?: string;
 }
 
 export const projects: Project[] = [
+    {
+        name: "Careers Platform",
+        description: "Discover exciting career opportunities and join our growing team. Browse available jobs, apply online, and track your applications.",
+        link: "https://yourcareers.vercel.app",
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Elysia.js", "Supabase", "Prisma", "NextAuth"],
+        date: "2026",
+    },
     {
         name: "SalaPeso",
         description: "Simple and intuitive savings tracker to help you reach your financial goals. Track multiple savings goals, monitor progress, and achieve your dreams.",
         link: "https://salapeso.vercel.app",
         technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Prisma", "ElysiaJS", "NextAuth"],
-        date: "2025",
+        date: "2026",
     },
     {
         name: "Catalink",
         description: "Create and share your product catalogs with secure share codes. Professional catalog management made simple.",
         link: "https://catalink.vercel.app/",
         technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "FastAPI", "Prisma"],
-        date: "2025",
+        date: "2026",
     },
     {
         name: "GoCodes",
@@ -31,23 +38,23 @@ export const projects: Project[] = [
     {
         name: "DigiVault",
         description: "Secure password manager to store, manage, and protect your passwords with advanced security features.",
-    link: "https://digivault-sand.vercel.app",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Supabase", "AES", "Stripe"],
-    date: "2025",
-},
-{
-    name: "PurseFlow",
-    description: "PurseFlow expense tracker account to manage your finances.",
-    link: "https://purseflow.vercel.app",
-    technologies: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "Supabase"],
-    date: "2025",
-},
+        link: "https://digivault-sand.vercel.app",
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Supabase", "AES", "Stripe"],
+        date: "2025",
+    },
     {
-      name: "ShoreAgents Staff Management System",
-      description: "Staff tracking system for monitoring active time, inactive time, break management, and task management.",
-      link: "https://shoreagents-users.vercel.app",
-      technologies: ["Electron.js", "Next.js", "Tailwind CSS", "Supabase", "Prisma", "Socket.io"],
-      date: "2025",
+        name: "PurseFlow",
+        description: "PurseFlow expense tracker account to manage your finances.",
+        link: "https://purseflow.vercel.app",
+        technologies: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "Supabase"],
+        date: "2025",
+    },
+    {
+        name: "ShoreAgents Staff Management System",
+        description: "Staff tracking system for monitoring active time, inactive time, break management, and task management.",
+        link: "https://shoreagents-users.vercel.app",
+        technologies: ["Electron.js", "Next.js", "Tailwind CSS", "Supabase", "Prisma", "Socket.io"],
+        date: "2025",
     },
     {
         name: "E-Booth",
@@ -70,6 +77,6 @@ export const projects: Project[] = [
         technologies: ["HTML", "CSS", "JavaScript"],
         date: "2023",
     },
-    
+
 ];
 
