@@ -7,6 +7,12 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    title: "Web Developer",
+    company: "SearchWorks.ph",
+    period: "2026 - Present",
+    description: "",
+  },
+  {
     title: "Jr. Web Developer",
     company: "ShoreAgents Inc.",
     period: "2025",
