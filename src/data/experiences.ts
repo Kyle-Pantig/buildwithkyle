@@ -13,6 +13,12 @@ export const experiences: Experience[] = [
     description: "",
   },
   {
+    title: "Web Developer",
+    company: "DTLA Print",
+    period: "2026 - Present",
+    description: "",
+  },
+  {
     title: "Jr. Web Developer",
     company: "ShoreAgents Inc.",
     period: "2025",
